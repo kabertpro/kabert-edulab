@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="r"><rect x="0" y="0" width="100" height="100" rx="22" ry="22"/></clipPath>
+  </defs>
+  <g clip-path="url(#r)">
+    <rect width="100" height="100" fill="#0F6E64"/>
+    <polygon points="0,100 100,100 100,0" fill="#000000" opacity="0.11"/>
+  </g>
+  <text x="50" y="68" font-family="'Space Grotesk','DejaVu Sans',sans-serif" font-weight="700"
+        font-size="52" fill="#ffffff" text-anchor="middle">K</text>
+  <circle cx="78" cy="78" r="15" fill="#FF6B47"/>
+  <polygon points="73,71 73,85 84,78" fill="#ffffff"/>
+</svg>

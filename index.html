@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kabert EduLab — Aprender también es jugar</title>
+<meta name="description" content="Kabert EduLab centraliza las aplicaciones educativas de Kabert Studio: juegos de lectoescritura, numeración y música para docentes, familias e instituciones.">
+<meta name="theme-color" content="#0F6E64">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="EduLab">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+
+<meta property="og:title" content="Kabert EduLab — Aprender también es jugar">
+<meta property="og:description" content="El portal oficial de las aplicaciones educativas de Kabert Studio.">
+<meta property="og:type" content="website">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+<!-- ============ SPLASH SCREEN ============ -->
+<div class="splash" aria-hidden="true">
+  <div class="splash-mark">
+    <div class="splash-badge">K</div>
+    <p class="splash-word">Kabert EduLab</p>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark" aria-hidden="true">K</span>
+      <span class="brand-name">Kabert <span>EduLab</span></span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#experiencias">Experiencias Educativas</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#novedades">Novedades</a></li>
+        <li><a href="#comunidad">Comunidad</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" aria-label="Cambiar tema claro u oscuro" title="Cambiar tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+
+      <button class="btn btn-ghost btn-sm btn-install" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+        <span>Instalar app</span>
+      </button>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="nav-mobile" aria-label="Navegación móvil">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#experiencias">Experiencias Educativas</a></li>
+      <li><a href="#recursos">Recursos</a></li>
+      <li><a href="#novedades">Novedades</a></li>
+      <li><a href="#comunidad">Comunidad</a></li>
+      <li><a href="#acerca">Acerca de</a></li>
+    </ul>
+    <div class="nav-mobile-actions">
+      <a class="btn btn-primary" href="#experiencias">Explorar aplicaciones</a>
+      <button class="btn btn-ghost btn-install" type="button">Instalar app</button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="hero-eyebrow"><span class="dot"></span>Kabert Studio · Laboratorio educativo</span>
+        <h1 class="hero-title">Tecnología educativa creada para <span class="accent">aprender jugando.</span></h1>
+        <p class="hero-sub">Una colección de aplicaciones educativas diseñadas para fortalecer el aprendizaje mediante experiencias interactivas — pensadas para el aula, el hogar y la institución.</p>
+        <div class="hero-actions">
+          <a class="btn btn-play" href="#experiencias">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3 14 9-14 9V3Z"/></svg>
+            Explorar aplicaciones
+          </a>
+          <a class="btn btn-ghost" href="#comunidad">Unirse a la comunidad</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <p class="hero-stat-num">6</p>
+            <p class="hero-stat-label">Aplicaciones activas</p>
+          </div>
+          <div>
+            <p class="hero-stat-num">3</p>
+            <p class="hero-stat-label">Áreas de aprendizaje</p>
+          </div>
+          <div>
+            <p class="hero-stat-num">100%</p>
+            <p class="hero-stat-label">Gratuitas y en español</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="hero-tile t1"><span>SIL-04 · Silabín</span></div>
+        <div class="hero-tile t2"><span>NUM-02 · Contando Números</span></div>
+        <div class="hero-tile t3"><span>VOC-01 · VocalAventura</span></div>
+        <div class="hero-tile t4"><span>YUP-06 · Yupay</span></div>
+      </div>
+    </div>
+
+    <svg class="wave-divider animated" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,20 L100,20 L120,8 L140,32 L160,20 L1200,20"/>
+    </svg>
+  </section>
+
+  <!-- ============ NOVEDADES ============ -->
+  <section class="section" id="novedades">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Novedades</span>
+        <h2 class="section-title">Lo último del laboratorio</h2>
+        <p class="section-sub">Actualizaciones, lanzamientos y mejoras de las aplicaciones de Kabert EduLab.</p>
+      </div>
+
+      <div class="news-strip" hidden></div>
+      <div class="empty-state news-empty reveal">
+        <strong>Muy pronto, novedades por aquí.</strong>
+        Estamos preparando los primeros anuncios de nuevas aplicaciones y actualizaciones.
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCIAS EDUCATIVAS ============ -->
+  <section class="section" id="experiencias" style="background:var(--bg-sunken);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Catálogo</span>
+        <h2 class="section-title">Experiencias educativas</h2>
+        <p class="section-sub">Cada aplicación es una experiencia independiente, lista para abrirse desde cualquier dispositivo.</p>
+      </div>
+
+      <div class="filter-bar reveal" role="group" aria-label="Filtrar por categoría"></div>
+      <div class="apps-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ============ RECURSOS ============ -->
+  <section class="section" id="recursos">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Recursos</span>
+        <h2 class="section-title">Material para el aula y el hogar</h2>
+        <p class="section-sub">Guías, presentaciones y material imprimible para acompañar cada aplicación.</p>
+      </div>
+
+      <div class="resources-grid reveal">
+        <div class="resource-card">
+          <span class="resource-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span>
+          <div>
+            <p class="resource-title">Guías PDF</p>
+            <p class="resource-desc">Próximamente disponibles.</p>
+          </div>
+        </div>
+        <div class="resource-card">
+          <span class="resource-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>
+          <div>
+            <p class="resource-title">Presentaciones</p>
+            <p class="resource-desc">Próximamente disponibles.</p>
+          </div>
+        </div>
+        <div class="resource-card">
+          <span class="resource-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/><path d="M8 12h8M8 16h5"/></svg></span>
+          <div>
+            <p class="resource-title">Material imprimible</p>
+            <p class="resource-desc">Próximamente disponible.</p>
+          </div>
+        </div>
+        <div class="resource-card">
+          <span class="resource-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 8 6 4-6 4V8Z"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span>
+          <div>
+            <p class="resource-title">Videos</p>
+            <p class="resource-desc">Próximamente disponibles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMUNIDAD ============ -->
+  <section class="section" id="comunidad" style="background:var(--bg-sunken);">
+    <div class="container">
+      <div class="community-card reveal">
+        <span class="community-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </span>
+        <h2 class="community-title">Únete a la comunidad de docentes y familias de Kabert EduLab</h2>
+        <p class="community-desc">Comparte experiencias, resuelve dudas y entérate primero de cada nueva aplicación en nuestro grupo oficial de WhatsApp.</p>
+        <a class="btn btn-outline-inverse" href="https://chat.whatsapp.com/I4tuxFbQPuo5R0sLXP80kf?s=cl&p=a&ilr=0" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Unirse al grupo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACERCA DEL CREADOR ============ -->
+  <section class="section" id="acerca">
+    <div class="container about-grid">
+      <div class="about-photo reveal">
+        <img src="assets/img/founder.jpg" alt="Foto de Luis Miguel Kapa Escobar"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="about-photo-fallback" style="display:none;">
+          <span class="initials">LK</span>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <p class="about-org">Kabert EduLab</p>
+        <p class="about-role">Fundador y Desarrollador Principal</p>
+        <h2 class="about-name">Luis Miguel Kapa Escobar</h2>
+        <p class="about-desc">Especialista en educación musical y desarrollador de aplicaciones educativas. Diseña herramientas digitales que unen pedagogía, música y tecnología para acompañar a docentes, familias e instituciones en Bolivia.</p>
+        <div class="about-tags">
+          <span class="about-tag">Educación musical</span>
+          <span class="about-tag">Desarrollo de software educativo</span>
+          <span class="about-tag">Kabert Studio</span>
+        </div>
+        <div class="about-contact">
+          <a class="btn btn-primary" href="https://wa.me/59165665429" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            +591 65665429
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand brand" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span class="brand-name">Kabert <span>EduLab</span></span>
+      </a>
+      <p class="footer-tagline">Aprender también es jugar.</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Explorar</p>
+      <a href="#experiencias">Experiencias Educativas</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#novedades">Novedades</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Comunidad</p>
+      <a href="#comunidad">Grupo de WhatsApp</a>
+      <a href="#acerca">Acerca del creador</a>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-col-title">Contacto</p>
+      <a href="https://wa.me/59165665429" target="_blank" rel="noopener">+591 65665429</a>
+      <span>Bolivia</span>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© <span data-year></span> Kabert EduLab. Todos los derechos reservados.</span>
+    <span class="mono">v1.0.0</span>
+  </div>
+</footer>
+
+<!-- ============ BOTÓN VOLVER ARRIBA ============ -->
+<button class="back-to-top" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="js/data.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pwa.js"></script>
+</body>
+</html>

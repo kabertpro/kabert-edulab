@@ -1,0 +1,74 @@
+[
+  {
+    "id": "vocalaventura",
+    "code": "VOC-01",
+    "name": "VocalAventura",
+    "tagline": "Aventura vocal y auditiva",
+    "description": "Entrenamiento auditivo y vocal a través de retos progresivos. Ideal para introducir a los niños al oído musical de forma lúdica.",
+    "category": "Música",
+    "version": "1.0.0",
+    "url": "https://vocalaventura.vercel.app/",
+    "thumbnail": "assets/img/apps/vocalaventura.jpg",
+    "color": "#0F6E64"
+  },
+  {
+    "id": "contando-numeros",
+    "code": "NUM-02",
+    "name": "Contando Números",
+    "tagline": "Del 0 al 100, jugando",
+    "description": "Juego de conteo con niveles desbloqueables, efectos y sonido, pensado para los primeros pasos con los números.",
+    "category": "Matemática",
+    "version": "1.0.0",
+    "url": "https://contando-numeros.vercel.app/",
+    "thumbnail": "assets/img/apps/contando-numeros.jpg",
+    "color": "#FF6B47"
+  },
+  {
+    "id": "lasvocales",
+    "code": "VOW-03",
+    "name": "Las Vocales",
+    "tagline": "Reconocimiento de vocales",
+    "description": "Actividades interactivas para reconocer y practicar las cinco vocales, con retroalimentación inmediata.",
+    "category": "Lectoescritura",
+    "version": "1.0.0",
+    "url": "https://lasvocales.vercel.app/",
+    "thumbnail": "assets/img/apps/lasvocales.jpg",
+    "color": "#0F6E64"
+  },
+  {
+    "id": "silabin",
+    "code": "SIL-04",
+    "name": "Silabín",
+    "tagline": "Lectura silábica por mundos",
+    "description": "Juego de lectura por sílabas organizado en mundos temáticos, con dificultad progresiva y banco de palabras propio.",
+    "category": "Lectoescritura",
+    "version": "1.0.0",
+    "url": "https://silabin.vercel.app/",
+    "thumbnail": "assets/img/apps/silabin.jpg",
+    "color": "#FF6B47"
+  },
+  {
+    "id": "silabaventura",
+    "code": "SLA-05",
+    "name": "SilabAventura",
+    "tagline": "Tres modos, un mismo reto",
+    "description": "PWA con tres modos de juego silábico, banco de 160 palabras y soporte offline para practicar en cualquier lugar.",
+    "category": "Lectoescritura",
+    "version": "1.0.0",
+    "url": "https://silabaventura.vercel.app/",
+    "thumbnail": "assets/img/apps/silabaventura.jpg",
+    "color": "#0F6E64"
+  },
+  {
+    "id": "yupay",
+    "code": "YUP-06",
+    "name": "Yupay",
+    "tagline": "Numeración con raíces propias",
+    "description": "Práctica numérica con una identidad visual propia, pensada para reforzar el cálculo desde edades tempranas.",
+    "category": "Matemática",
+    "version": "1.0.0",
+    "url": "https://yupay.vercel.app/",
+    "thumbnail": "assets/img/apps/yupay.jpg",
+    "color": "#FF6B47"
+  }
+]
