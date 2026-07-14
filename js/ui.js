@@ -149,6 +149,23 @@
   };
 
   /* ---------------------------------------------------------------------
+     Render: tiles del Hero (vitrina superior con miniaturas reales)
+  --------------------------------------------------------------------- */
+  function heroTileHTML(app) {
+    return `
+      <div class="hero-tile" style="--tile-c:${app.color}">
+        <img src="${app.thumbnail}" alt="" loading="lazy" onerror="this.remove();">
+        <span>${app.code} · ${app.name}</span>
+      </div>`;
+  }
+
+  function renderHeroTiles(apps) {
+    const container = document.getElementById('heroTiles');
+    if (!container || !apps.length) return;
+    container.innerHTML = apps.slice(0, 4).map(heroTileHTML).join('');
+  }
+
+  /* ---------------------------------------------------------------------
      Render: Experiencias educativas
   --------------------------------------------------------------------- */
   let allApps = [];
@@ -225,6 +242,7 @@
     allApps = await KabertData.getApps();
     renderFilters(allApps, grid);
     renderAppCards(allApps, grid);
+    renderHeroTiles(allApps);
 
     grid.addEventListener('click', async (e) => {
       const btn = e.target.closest('button[data-action]');
