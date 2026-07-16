@@ -313,6 +313,40 @@
   }
 
   /* ---------------------------------------------------------------------
+     Render: Seminarios realizados
+  --------------------------------------------------------------------- */
+  function seminarCardHTML(seminar) {
+    return `
+      <article class="seminar-card reveal">
+        <img src="${seminar.thumbnail}" alt="${seminar.title}" loading="lazy"
+             onerror="this.remove();">
+        <div class="seminar-info">
+          <p class="seminar-date mono">${seminar.date || ''}</p>
+          <h3 class="seminar-title">${seminar.title}</h3>
+          <p class="seminar-place">${seminar.place || ''}</p>
+        </div>
+      </article>`;
+  }
+
+  async function initSeminars() {
+    const grid = document.querySelector('.seminar-grid');
+    const emptyEl = document.querySelector('.seminar-empty');
+    if (!grid) return;
+    const seminars = await KabertData.getSeminars();
+
+    if (!seminars.length) {
+      grid.hidden = true;
+      if (emptyEl) emptyEl.hidden = false;
+      return;
+    }
+
+    grid.hidden = false;
+    if (emptyEl) emptyEl.hidden = true;
+    grid.innerHTML = seminars.map(seminarCardHTML).join('');
+    initReveal();
+  }
+
+  /* ---------------------------------------------------------------------
      Año dinámico + init general
   --------------------------------------------------------------------- */
   function initFooterYear() {
@@ -329,6 +363,7 @@
     initFooterYear();
     initApps();
     initNews();
+    initSeminars();
     initReveal();
 
     document.querySelector('.theme-toggle')?.addEventListener('click', toggleTheme);

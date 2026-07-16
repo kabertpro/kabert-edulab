@@ -16,3 +16,20 @@ como reemplazo elegante), pero para la versión final se recomienda añadir:
 Simplemente coloca los archivos con esos nombres exactos y `js/ui.js` los
 mostrará automáticamente en lugar del icono/gradiente de respaldo — no hace
 falta tocar el HTML ni el JS.
+
+## Sección "Seminarios realizados"
+
+Esta sección no tiene nombres de archivo fijos — se define completa en
+`data/seminars.json` (vacío por defecto). Guarda tus fotos en
+`assets/img/seminarios/` con el nombre que quieras (ej. `taller-cochabamba-2026.jpg`)
+y agrega una entrada así:
+
+```json
+{
+  "title": "Taller de lectoescritura con SilabAventura",
+  "date": "Junio 2026",
+  "place": "Cochabamba, Bolivia",
+  "thumbnail": "assets/img/seminarios/taller-cochabamba-2026.jpg"
+}
+```
+Tamaño recomendado: 1000×750 px (relación 4:3).

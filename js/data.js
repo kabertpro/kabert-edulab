@@ -19,6 +19,7 @@ const KabertData = (() => {
 
   const getApps = () => fetchJSON('data/apps.json');
   const getNews = () => fetchJSON('data/news.json');
+  const getSeminars = () => fetchJSON('data/seminars.json');
 
-  return { getApps, getNews };
+  return { getApps, getNews, getSeminars };
 })();
