@@ -1,4 +1,4 @@
-const CACHE_VERSION = 'kabert-edulab-v2';
+const CACHE_VERSION = 'kabert-edulab-v3';
 const APP_SHELL = [
   './',
   './index.html',
@@ -6,6 +6,7 @@ const APP_SHELL = [
   './js/data.js',
   './js/ui.js',
   './js/pwa.js',
+  './js/particles.js',
   './data/apps.json',
   './data/news.json',
   './data/seminars.json',
