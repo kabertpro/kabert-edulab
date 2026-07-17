@@ -62,7 +62,7 @@
 [data-theme="dark"] {
   --bg: #0F0D0F;
   --bg-elevated: #17151A;
-  --bg-sunken: #0A090B;
+  --bg-sunken: #17141C;
   --ink: #F2F3F5;
   --ink-soft: #ABB0BA;
   --ink-faint: #6B7080;
@@ -147,8 +147,51 @@ h1, h2, h3, .font-display {
 
 .section {
   padding-block: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+.section > .container {
+  position: relative;
+  z-index: 1;
 }
 
+/* Manchas de ambiente — continúan el lenguaje de color del Hero en el
+   resto de la página, sin el costo de partículas animadas. Cada sección
+   define su propia posición/color vía variables CSS. */
+.section.ambient-glow::before,
+.section.ambient-glow::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 55vw;
+  height: 55vw;
+  max-width: 720px;
+  max-height: 720px;
+  min-width: 340px;
+  min-height: 340px;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  opacity: 0.16;
+}
+[data-theme="dark"] .section.ambient-glow::before,
+[data-theme="dark"] .section.ambient-glow::after {
+  opacity: 0.22;
+}
+.section.ambient-glow::before {
+  background: var(--glow-a, var(--brand));
+  top: var(--glow-a-y, -18%);
+  left: var(--glow-a-x, -12%);
+}
+.section.ambient-glow::after {
+  background: var(--glow-b, var(--play));
+  bottom: var(--glow-b-y, -20%);
+  right: var(--glow-b-x, -10%);
+  width: 42vw;
+  height: 42vw;
+  max-width: 560px;
+  max-height: 560px;
+}
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -1051,26 +1094,6 @@ h1, h2, h3, .font-display {
   margin-top: 2px;
 }
 
-/* Franja decorativa — motivo geométrico inspirado en textiles andinos.
-   Aporta calidez visual sin depender de fotografías. */
-.pattern-strip {
-  height: 14px;
-  width: 100%;
-  background-image: repeating-linear-gradient(
-    45deg,
-    var(--play) 0px, var(--play) 7px,
-    var(--brand) 7px, var(--brand) 14px
-  );
-  clip-path: polygon(
-    0% 50%, 3.5% 0%, 7% 50%, 10.5% 0%, 14% 50%, 17.5% 0%, 21% 50%, 24.5% 0%,
-    28% 50%, 31.5% 0%, 35% 50%, 38.5% 0%, 42% 50%, 45.5% 0%, 49% 50%, 52.5% 0%,
-    56% 50%, 59.5% 0%, 63% 50%, 66.5% 0%, 70% 50%, 73.5% 0%, 77% 50%, 80.5% 0%,
-    84% 50%, 87.5% 0%, 91% 50%, 94.5% 0%, 98% 50%, 100% 25%,
-    100% 100%, 0% 100%
-  );
-  opacity: 0.85;
-}
-[data-theme="dark"] .pattern-strip { opacity: 0.6; }
 
 /* ==========================================================================
    Acerca del creador
@@ -1158,9 +1181,20 @@ h1, h2, h3, .font-display {
    ========================================================================== */
 
 .site-footer {
+  position: relative;
   border-top: 1px solid var(--line);
   padding-block: var(--space-lg);
   background: var(--bg-sunken);
+}
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--brand), var(--gold), var(--play));
+  opacity: 0.7;
 }
 .footer-grid {
   display: grid;
